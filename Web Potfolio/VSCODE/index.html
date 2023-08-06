@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="java.js">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <link rel="stylesheet" href="/fontawesome6/free/webfonts">
+  <link rel="stylesheet" href="/fontawesome6/free/css"> -->
+  <script src="https://kit.fontawesome.com/b6bf74592e.js" crossorigin="anonymous"></script>
+
+  <title>TEST</title>
+</head>
+<body  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="height:3150px;">
+ <!------------------Nav----------------->
+<nav class="navbar navbar-expand-sm bg-custom navbar-dark fixed-top  shadow-5-strong">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="fa-regular fa-id-card fa-2xl">
+      <div   class="waviy" style="margin-left: 55px;">
+        <span1  style="--i:1">P</span1>
+        <span1 style="--i:2">R</span1>
+        <span1 style="--i:3">O</span1>
+        <span1 style="--i:4">F</span1>
+        <span1 style="--i:5">I</span1>
+        <span1 style="--i:6">L</span1>
+        <span1 style="--i:7">E</span1>
+       </div>
+       </i>
+      <!-- <i src="profile.png" alt="Avatar Logo" style="width:75px;" class="rounded-pill"> Profile</a> -->
+        <ul class="navbar-nav justify-content-center borderYtoX main" style="font-size: 20px;">
+        <li class="nav-item ">
+          <a class="nav-link " style="margin-top: -30px;" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#profile">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">MyWork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="dropdown" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!----------------------- Main ------------------------>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+var nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function(){
+  if(window.pageYOffset > 800){
+    nav.classList.add('bg-dark','shadow');
+  }else{
+    nav.classList.remove('bg-dark','shadow');
+  }
+});
+</script>
+
+<!----------------- Home ------------------>
+<div id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner"data-bs-keyboard="true" data-bs-ride="true">
+    <div class="carousel-item active c-item">
+      <img src="picture\Grey-Aesthetic-Wallpaper-HD-1080p.jpg" class="d-block w-100 c-img" style="filter: brightness(0.8); width: 100%; " alt="slide 1">
+      <div class="carousel-caption mt-4 d-none d-md-block c-text ">
+        <!-- <p class="mt-5 fs-3 text-upper align-items-center justify-content-center">This site I created to see about my profile.</p> -->
+        <p class="side">
+          <span>This</span>
+          <span>Website</span>
+          <span>I</span>
+          <span>created</span>
+          <span>to</span>
+          <span>see</span>
+          <span>about</span>
+          <span>my</span>
+          <span>profile.</span>
+
+      </p>
+        <h1 class="side display-1 fw-bolder text-capitalize" style="font-family: Arial, Helvetica, sans-serif;  max-width: 40ch;
+        text-align: center;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);">Can Now See!!</h1>
+      
+        <a class="btn btn-outline-light px-4 py-2 fs-5 mt-5 btn-lg" href="#profile" role="button">Let's Go</a>
+        
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="picture\aman-dhakal-YkWz_coLm84-unsplash.jpg" class="d-block w-100 c-img " style="filter: brightness(0.6); width: 100%;" alt="slide 2">
+      <div class="carousel-caption mt-4 d-none d-md-block c-text">
+        <p class="side">
+          <span>This</span>
+          <span>Website</span>
+          <span>was</span>
+          <span>created</span>
+          <span>on</span>
+      </p>
+        <h1 class="side display-1 fw-bolder text-capitalize" style="font-family: Arial, Helvetica, sans-serif;   max-width: 40ch;
+        text-align: center;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);">24 March 2023.</h1>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="picture\sa.jpg" class="d-block w-100 c-img" style="filter: brightness(0.8); width: 100%;" alt="slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!----------------------- About ----------------------->
+<div id="profile" class="d-flex flex-column mt-3 p-5 bg-light text-muted  rounded border border-dark" style="padding:200px 100px;">
+  <div class="p-2" style="-webkit-text-stroke: 2px; -webkit-text-stroke-color: grey;"><h1 style="-webkit-text-fill-color: white;">About</h1></div>
+  <div class="d-flex flex-row">
+  <div class="container-fluid mt-3 p-2">
+    <div class="card border border-dark bg-secondary " style="width:250px;">
+      <img class="card-img-top " src="picture\cos.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title" style="color: #e6e6e6;">Chaiyapat Saiprasat</h4>
+        <p class="text-info">Student</p>
+        <!-- <button class="btn btn-basic" disabled>
+          <span class="spinner-grow spinner-grow-sm"></span>
+          Loading..
+        </button> -->
+      </div>
+    </div>
+    <br>   
+</div>   
+<img class="d-flex p-2" src="picture\RESUME-PhotoRoom.png-PhotoRoom.png" style="padding: 500px 570px; margin: auto; margin-top: -20vh; margin-left: 10vh; margin-right: 40vh;" alt=""> 
+    <!-- <div class="flexbox">
+      <div class="item">
+        <div class="content">
+          <p>11111</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="content">
+          <p>22222</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="content">
+          <p>33333</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="content">
+          <p>44444</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<!--------------------- Project --------------------->
+<div id="project" class="d-flex flex-column mt-3 p-5 bg-light text-light rounded border border-dark" style="padding:200px 100px;">
+  <div class="p-2" style="-webkit-text-stroke: 2px; -webkit-text-stroke-color: grey;"><h1>My Work</h1></div>
+  <div class="d-flex flex-row">
+  <div class="container-fluid mt-3 p-2">
+  <div class="wave" style="text-align: center; margin: 0 auto;">
+    <!-- <h2>Coming Soon...</h2>
+    <h2>Coming Soon...</h2> -->
+    <span style="text-decoration: none; font-size: 40px;color: grey; float: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">Project</span> <span class="badge btn btn-info" data-bs-toggle="modal" data-bs-target="#Modalx" style="float: inline-end; font-size: 25px;color: #ffffff; text-decoration: none;">เปิดดู</span>
+    <br>
+    <br>
+    <br>
+    <p style="text-decoration: none; font-size: 40px;color: grey; float: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">Certificate</p> <p class="badge btn btn-info" data-bs-toggle="modal" data-bs-target="#Modalz" style="float: inline-end; margin-left: -55px; font-size: 25px;color: #ffffff; text-decoration: none;">เปิดดู</p>
+  
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-------------------- Contact -------------------->
+<div id="contact" class="d-flex flex-column mt-3 p-5 bg-secondary text-light rounded border border-dark"  style="padding:200px 100px;">
+  <div class="p-2" style="-webkit-text-stroke: 1px; -webkit-text-stroke-color: white;"><h1 style="color: gray;">Contact</h1></div>
+  <div class="d-flex flex-row">
+  <div class="container-fluid mt-3 p-2">
+    <div class="d-flex flex-column">
+
+    <div> 
+    <i class="p-4 fa-solid fa-envelope fa-2xl" style="color: #e6e6e6; font-size: 55px;"></i>
+   <span style="font-size: 30px;color: #e6e6e6; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">saiprasatchaiyapat@gmail.com</span>
+  </div>
+  <div>
+    <img src="picture\facebook-2869 (1).png" class="p-4" style="color: #e6e6e6; width: -90vh;"></i>
+    <a href="https://www.facebook.com/Icezanar" target="_blank" style="font-size: 30px;color: #e6e6e6; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none">Illce Chaiyapat</a>
+    </div>
+    <div style="margin-top: -20px;">
+      <img src="picture\line-logo-8799.png" class="p-4" style="color: #e6e6e6; width: 110px"></i>
+      <span type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 30px;color: #e6e6e6; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">icethailand17  <span class="badge btn btn-outline-light">QRCode</span></span>
+      </div>
+    <div style="margin-top: -2px;">
+    <i class="p-4 fa-solid fa-phone fa-2xl" style="color: #e6e6e6; font-size: 55px;"></i>
+    <span style="font-size: 30px;color: #e6e6e6; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">094-9650006</span>
+  </div>     
+  <!-- <div style="margin-top: 20px;">
+      <i class="p-4 fa-solid fa-location-dot fa-2xl" style="color: #e6e6e6; font-size: 55px;"></i>
+      <a href="https://goo.gl/maps/YQBQ8wv6NHuqjEje6" target="_blank" style="font-size: 30px;color: #e6e6e6; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none">Chuan Chuen Graden Ville, Tambon Bang Dua, Amphoe Mueang Pathum Thani, Chang Wat Pathum Thani 12000</a>
+      </div> -->
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!----------------- Modal ---------------->
+
+<!-- The Modal -->
+<div class="modal" id="Modalx">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Project</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+            <a href="ตู้กดสินค้า.pdf" target="_blank">
+    <span type="button" target="_blank" style="font-size: 30px;color: grey; float: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ตู้กดสินค้า  </span><span class="badge btn btn-info" style="float: right; font-size: 25px;color: #ffffff; margin-left: 30px; text-decoration: none">เปิดดู</span>
+   </a>
+   <br>
+   <br>
+   <br>
+   <a href="ล็อกอิน.pdf" target="_blank" >
+    <span type="button" style="text-decoration: none; font-size: 30px;color: grey; float: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">ระบบล็อกอิน </span><span class="badge btn btn-info" style="float: right; margin-left: 25px; font-size: 25px;color: #ffffff; text-decoration: none;">เปิดดู</span>
+   </a>
+      </div>  
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">QR CODE</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <img src="qrcode.jpg" style="font-size: -100px;" alt="">
+      </div>  
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="Modalz">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Certificate</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+      </div>  
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!---------------------- End ---------------------->
+
+<p style="font-family: Arial, Helvetica, sans-serif; color: #6c757d; text-align: center; font-size: 20px; margin-top: 3%;">\\-------------------- Copyright <i class="fa-regular fa-copyright" style="color: #6c757d;"></i> 2023 by Chaiyapat --------------------//</p>
+
+</body>
+
+</html>
